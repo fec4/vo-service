@@ -6,7 +6,7 @@ const businessSchema = new Schema({
     type: String,
     required: true
   },
-  business_reviews: {
+  business_rating: {
     type: Number
   },
   business_genre: {
