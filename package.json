@@ -10,7 +10,9 @@
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode development"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mongodb-stitch-browser-sdk": "^4.4.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
