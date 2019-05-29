@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const businessSchema = new Schema({
+let businessSchema = new Schema({
+  business_id: {
+    type: Number
+  },
   business_name: {
     type: String,
-    required: true
+    unique: true
   },
   business_rating: {
     type: Number
@@ -15,9 +18,9 @@ const businessSchema = new Schema({
   business_phone: {
     type: String
   },
-  map_id: {
-    type: Schema.Types.ObjectId, ref: 'map'
+  business_reviews: {
+    type: Number
   }
-})
+});
 
 module.exports = Business = mongoose.model('business', businessSchema);
