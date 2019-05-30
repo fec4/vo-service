@@ -15,15 +15,15 @@ class App extends React.Component {
         name: '',
         rating: 0,
         reviews: 0,
-        genre: '',
-        mapPicture: ''
+        genre: ''
       },
       completeAddress: {
         address: '',
         city: '',
         state: '',
         zip: 0,
-        phone: ''
+        phone: '',
+        mapPicture: ''
       },
       pictures: []
     }
