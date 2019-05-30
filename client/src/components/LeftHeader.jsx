@@ -1,24 +1,24 @@
 import React from 'react';
 
 const LeftHeader = (props) => (
-  <div class="left-container">
-    <div class="business-title">
+  <div className="left-container">
+    <div className="business-title">
       <h1>{props.info.name}</h1>
-      <div class="claimed-container">
-        <span><img></img></span>
+      <div className="claimed-container">
+        <span><img src="https://s3-us-west-2.amazonaws.com/jumpermedia.co/uploads/2018/07/instagram-verified-symbol-768x768-1-300x300.png" alt="blue check"></img></span>
         Claimed
       </div>
     </div>
 
-    <div class="reviews-container">
-      <div><img>STARS</img></div>
-      <span class="review-count">{props.info.reviews}</span>
-      <a class="chiclet-link">Details</a>
+    <div className="reviews-container">
+      <div>stars</div>
+      <span className="review-count">{props.info.reviews} reviews</span>
+      <a className="chiclet-link">Details</a>
     </div>
 
-    <div class="category-container">
-      <a class="genre-link">{props.info.genre}</a>
-      <a class="chiclet-link">Edit</a>
+    <div className="category-container">
+      <a className="genre-link">{props.info.genre}</a>
+      <a className="chiclet-link">Edit</a>
     </div>
   </div>
 )

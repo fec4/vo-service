@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode development",
+    "build": "webpack --mode development --watch",
     "seed": "node ./server/seed/business-seeder.js"
   },
   "dependencies": {
@@ -31,7 +31,6 @@
     "mongoose": "^5.5.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.8.8",
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
