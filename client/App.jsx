@@ -31,12 +31,12 @@ class App extends Component {
 
   render () {
     return (
-      <div className="content-container">
-        <div className="biz-header">
+      <div className="content-container js-biz-details">
+        <div className="biz-header biz-page-header clearfix">
           <LeftHeader info={this.state.businessInfo} />
           <RightHeader />
         </div>
-        <div className="biz-sub-header">
+        <div className="biz-sub-header biz-page-subheader">
           <Map location={this.state.completeAddress} />
           <Gallery pictures={this.state.pictures} />
         </div>

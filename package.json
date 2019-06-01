@@ -9,7 +9,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode development --watch",
-    "seed": "node ./server/seed/business-seeder.js"
+    "seed": "node ./server/seed/business-seeder.js",
+    "sass": "sass --watch App.scss App.css"
   },
   "dependencies": {
     "mongodb-stitch-browser-sdk": "^4.4.0"
