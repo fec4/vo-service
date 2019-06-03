@@ -1,17 +1,50 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
+  "name": "vo-server",
+  "description": "> Project description",
+  "author": "Michael Vo",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode development --watch",
+    "seed": "node ./server/seed/business-seeder.js",
+    "sass": "sass --watch App.scss App.css"
   },
   "dependencies": {
+    "mongodb-stitch-browser-sdk": "^4.4.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "css-loader": "^2.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "express": "^4.17.1",
+    "mocha": "^6.1.4",
+    "mongodb": "^3.2.6",
+    "mongoose": "^5.5.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fec4/vo-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fec4/vo-service/issues"
+  },
+  "homepage": "https://github.com/fec4/vo-service#readme"
 }
